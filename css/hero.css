@@ -59,6 +59,16 @@
     line-height: 1.07143;
     max-width: 496px;
   }
+
+  .section-hero {
+    padding-bottom: 112;
+    padding-top: 112;
+  }
+
+  .hero-title {
+    margin-bottom: 36px;
+  }
+
   .post-hero {
     background-image:
       linear-gradient(
@@ -77,10 +87,15 @@
     padding-bottom: 188px;
     padding-top: 188px;
   }
+
   .hero-title {
     margin-bottom: 48px;
   }
+
   .post-hero {
+    max-width: 1440px;
+    width: 100%;
+
     background-image:
       linear-gradient(
         180deg,

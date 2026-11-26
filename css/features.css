@@ -3,13 +3,16 @@
   flex-wrap: wrap;
   gap: 72px 24px;
 }
+
 .features-icons {
   display: none;
 }
+
 .features-card {
   width: 100%;
 }
-z .features-title {
+
+.features-title {
   margin-bottom: 8px;
 
   font-weight: 700;
@@ -19,10 +22,19 @@ z .features-title {
   text-align: center;
   color: #2e2f42;
 }
+
+.features-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
 @media screen and (min-width: 768px) {
   .features-card {
     width: calc((100% - 24px) / 2);
   }
+
   .features-title {
     text-align: start;
   }
@@ -31,15 +43,13 @@ z .features-title {
   .features-card {
     width: calc((100% - 3 * 24px) / 4);
   }
+
   .features-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
   }
-  .features-text {
-    letter-spacing: 0.02em;
-    color: #434455;
-  }
+
   .features-icons {
     display: block;
     border: 1px solid #8e8f99;
@@ -48,6 +58,7 @@ z .features-title {
     height: 112px;
     background-color: #f4f4fd;
   }
+
   .features-icons-padding {
     margin: 24px auto;
     display: block;

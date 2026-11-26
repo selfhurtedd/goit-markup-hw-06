@@ -20,7 +20,7 @@
   align-items: center;
   cursor: pointer;
   border: none;
-  background-color: #fff;
+  background-color: transparent;
   width: 24px;
   height: 24px;
   flex-shrink: 0;
@@ -141,6 +141,7 @@
   .post-logo-header {
     padding-bottom: 24px;
     padding-top: 24px;
+    margin-right: 76px;
   }
   .address-link {
     letter-spacing: 0.02em;

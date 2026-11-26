@@ -9,6 +9,8 @@
   justify-content: center;
   align-items: center;
   visibility: hidden;
+  background-color: #fff;
+
   transition:
     opacity 250ms ease-in-out,
     visibility 250ms ease-in-out;
@@ -25,9 +27,8 @@
 .mobile {
   display: flex;
   flex-direction: column;
-  gap: 70px;
   position: relative;
-  background: #fcfcfc;
+  background: #fff;
   overflow-y: auto;
 
   width: 100%;
@@ -108,10 +109,10 @@
 .gap-address-mobile {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 24px;
 }
 .address-link-mobile.active {
-  color: #404bbf;
+  color: #4d5ae5;
 }
 
 .nav-link-mobile.active-link-mobile {
@@ -125,4 +126,17 @@
 .social-icons.mob {
   justify-content: flex-start;
   gap: 40px;
+}
+
+.gap-address-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin-top: 168px;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-overlay {
+    opacity: 0;
+  }
 }
