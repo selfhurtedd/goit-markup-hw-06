@@ -1,7 +1,7 @@
 .post-footer {
   background-color: #2e2f42;
-  padding-bottom: 100px;
-  padding-top: 100px;
+  padding-bottom: 96px;
+  padding-top: 96px;
 }
 .post-logo-footer {
   font-family: 'Raleway', sans-serif;
@@ -24,11 +24,10 @@
 }
 .post-footer .container {
   display: flex;
-}
-.footer-logo-text {
-  margin-right: 120px;
+  flex-direction: column;
 }
 .socials-text {
+  text-align: center;
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
@@ -45,4 +44,102 @@
 }
 .social-icons.footer-gap {
   gap: 16px;
+}
+.form-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+.subscribe-text {
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.email-input {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  background: #2e2f42;
+  padding: 8px 16px;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #fff;
+  width: 264px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.email-input::placeholder {
+  color: #fff;
+  letter-spacing: 0.04em;
+  font-size: 12px;
+}
+.email-input:focus {
+  border-color: #31d0aa;
+  outline: none;
+}
+.form-footer-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  gap: 16px;
+  border-radius: 4px;
+  border: none;
+  padding: 8px 24px;
+  width: 165px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background-color: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-footer-button:hover,
+.form-footer-button:focus {
+  background-color: #31d0aa;
+}
+.footer-logo-text {
+  margin-bottom: 72px;
+}
+.social {
+  margin-bottom: 72px;
+}
+
+@media screen and (min-width: 768px) {
+  .post-footer .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .footer-logo-text {
+    margin-bottom: 72px;
+    padding-right: 24px;
+  }
+
+  .social {
+    margin: 0;
+  }
+
+  .form-footer {
+    flex-direction: row;
+    gap: 24px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .post-footer {
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
+  .footer-logo-text {
+    margin-right: 120px;
+  }
+  .subscribe-form {
+    margin-left: auto;
+  }
 }

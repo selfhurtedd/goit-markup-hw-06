@@ -61,3 +61,24 @@
 .team-shadow:hover .overlay {
   transform: translateY(0);
 }
+
+@media screen and (min-width: 768px) {
+  .container-portfolio {
+    gap: 72px 24px;
+  }
+  .team-shadow {
+    width: calc((100% - 24px) / 2);
+  }
+  .portfolio {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .team-shadow {
+    width: 356px;
+  }
+  .container-portfolio {
+    gap: 48px 24px;
+  }
+}

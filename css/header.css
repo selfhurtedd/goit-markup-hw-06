@@ -2,6 +2,7 @@
   color: #4d5ae5;
 }
 .post-logo-header {
+  display: block;
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
   text-transform: uppercase;
@@ -10,12 +11,25 @@
   color: #2e2f42;
   font-size: 18px;
   line-height: 1.33333;
-  margin-right: 76px;
-  padding-bottom: 24px;
-  padding-top: 24px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+}
+.illustration {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  background-color: #fff;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.burger {
+  flex-shrink: 0;
 }
 .nav-link {
-  display: block;
+  display: none;
   font-weight: 500;
   letter-spacing: 0.02em;
   color: #2e2f42;
@@ -24,6 +38,9 @@
   padding-top: 24px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.header-container > .navigation-mobile {
+  display: none;
+}
 .nav-link:hover {
   color: #404bbf;
 }
@@ -31,7 +48,7 @@
   color: #404bbf;
 }
 .address-link {
-  display: block;
+  display: none;
   letter-spacing: 0.02em;
   color: #434455;
   text-decoration: none;
@@ -49,20 +66,24 @@
 .header-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+.header-margin {
+  display: none;
 }
 .gap-nav {
-  display: flex;
+  display: none;
   gap: 40px;
 }
 .gap-address {
-  display: flex;
+  display: none;
   gap: 40px;
-}
-.header-margin {
-  margin-left: auto;
 }
 .post-header {
   border-bottom: 1px solid #e7e9fc;
+}
+.navigation {
+  display: none;
 }
 .nav-link.active-link {
   position: relative;
@@ -77,4 +98,70 @@
   height: 4px;
   bottom: 0px;
   left: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .illustration {
+    display: none;
+  }
+  .nav-link {
+    display: block;
+  }
+  .navigation {
+    display: block;
+  }
+  .address-link {
+    display: block;
+  }
+
+  .gap-nav {
+    display: flex;
+  }
+  .gap-address {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .header-margin {
+    display: block;
+    margin-left: auto;
+  }
+  .post-logo-header {
+    margin-right: 120px;
+  }
+  .address-link {
+    padding: 0;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .post-logo-header {
+    padding-bottom: 24px;
+    padding-top: 24px;
+  }
+  .address-link {
+    letter-spacing: 0.02em;
+    font-size: 16px;
+    line-height: 1.5;
+    padding-bottom: 24px;
+    padding-top: 24px;
+  }
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
+  .gap-nav {
+    gap: 40px;
+  }
+  .gap-address {
+    flex-direction: row;
+    gap: 40px;
+  }
+  .header-margin {
+    display: block;
+    margin-left: auto;
+  }
 }

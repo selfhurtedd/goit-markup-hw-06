@@ -26,13 +26,20 @@
   background-color: #f4f4fd;
 }
 .team-cards {
-  gap: 24px;
+  gap: 72px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 .team-text-block {
   padding: 32px 16px;
 }
 .team-border {
+  max-width: 264px;
+  width: 100%;
+
   background-color: #fff;
   border-radius: 0 0 4px 4px;
   box-shadow:
@@ -63,4 +70,15 @@
 }
 .social-icon:focus {
   background-color: #404bbf;
+}
+
+@media screen and (min-width: 768px) {
+  .team-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 64px 24px;
+    width: 100%;
+    align-items: flex-start;
+  }
 }
