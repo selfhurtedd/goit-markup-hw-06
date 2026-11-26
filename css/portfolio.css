@@ -76,9 +76,14 @@
 }
 @media screen and (min-width: 1158px) {
   .team-shadow {
-    width: 356px;
+    width: calc((100% - 48px) / 3);
   }
   .container-portfolio {
     gap: 48px 24px;
+  }
+
+  .portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 }

@@ -34,7 +34,7 @@
     0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background: #fcfcfc;
-  max-width: 408px;
+  max-width: 288px;
   width: 100%;
   box-sizing: border-box;
   flex: 0 0 auto;
@@ -229,5 +229,11 @@
 @media (max-width: 767px) {
   .modal {
     padding-inline: 16px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .modal {
+    max-width: 408px;
   }
 }

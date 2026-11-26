@@ -35,6 +35,7 @@
   height: 100%;
   padding-top: 72px;
   padding-left: 16px;
+  padding-right: 16px;
 }
 
 .close-button-mobile {
@@ -126,6 +127,7 @@
 .social-icons.mob {
   justify-content: flex-start;
   gap: 40px;
+  padding-bottom: 40px;
 }
 
 .gap-address-icons {
@@ -138,5 +140,9 @@
 @media screen and (min-width: 768px) {
   .mobile-overlay {
     opacity: 0;
+  }
+
+  .mobile-overlay.is-open {
+    display: none;
   }
 }

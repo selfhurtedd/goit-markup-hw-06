@@ -4,7 +4,6 @@
   padding-top: 96px;
 }
 .post-logo-footer {
-  text-align: center;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -34,6 +33,7 @@
   margin-bottom: 16px;
   font-weight: 500;
 }
+
 .social-icon.footer-color {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -44,6 +44,7 @@
   background-color: #31d0aa;
 }
 .social-icons.footer-gap {
+  display: flex;
   gap: 16px;
 }
 .form-footer {
@@ -104,10 +105,15 @@
   background-color: #31d0aa;
 }
 .footer-logo-text {
+  text-align: center;
   margin-bottom: 72px;
 }
 .social {
   margin-bottom: 72px;
+}
+
+.subscribe-form {
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
