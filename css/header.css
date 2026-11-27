@@ -27,6 +27,7 @@
 }
 .burger {
   flex-shrink: 0;
+  padding: 0;
 }
 .nav-link {
   display: none;

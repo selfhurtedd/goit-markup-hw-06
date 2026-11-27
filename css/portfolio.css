@@ -69,10 +69,6 @@
   .team-shadow {
     width: calc((100% - 24px) / 2);
   }
-  .portfolio {
-    padding-top: 96px;
-    padding-bottom: 96px;
-  }
 }
 @media screen and (min-width: 1158px) {
   .team-shadow {
@@ -80,10 +76,5 @@
   }
   .container-portfolio {
     gap: 48px 24px;
-  }
-
-  .portfolio {
-    padding-top: 120px;
-    padding-bottom: 120px;
   }
 }
