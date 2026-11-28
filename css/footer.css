@@ -12,7 +12,6 @@
   text-transform: uppercase;
   color: #f4f4fd;
   text-decoration: none;
-  text-align: center;
 }
 .post-logo-footer span {
   color: #4d5ae5;
@@ -121,11 +120,18 @@
 }
 
 @media screen and (min-width: 768px) {
+  .social-icons.footer-gap {
+    justify-content: flex-start;
+  }
   .socials-text {
     text-align: start;
   }
 
   .subscribe-text {
+    text-align: start;
+  }
+
+  .subscribe-form {
     text-align: start;
   }
 
@@ -142,6 +148,7 @@
   }
 
   .footer-logo-text {
+    text-align: start;
     margin-bottom: 72px;
     padding-right: 24px;
   }
@@ -160,14 +167,27 @@
   .footer-logo-text {
     margin-bottom: 0;
   }
+
   .post-footer {
     padding-bottom: 100px;
     padding-top: 100px;
   }
+
   .footer-logo-text {
     margin-right: 120px;
+    padding: 0;
   }
+
   .subscribe-form {
     margin-left: auto;
+  }
+
+  .post-footer .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .social-icons.footer-gap {
+    padding-bottom: 0;
   }
 }
